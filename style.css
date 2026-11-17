@@ -252,5 +252,30 @@ body {
 
 }
 .copyright{
-    padding-bottom:5px ;
+    padding-bottom:5px ;}
+.Jadwal-Kebersihan {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 20px;
+    max-width: 900px;
+    margin: 30px auto;
+}
+
+.kebersihan {
+    grid-column: span 2;
+    background-color: #f0f0f0;
+    border: 2px solid #333;
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Kotak ke-4 */
+.kebersihan:nth-child(4) {
+    grid-column: 2 / span 2;
+}
+
+/* Kotak ke-5 */
+.kebersihan:nth-child(5) {
+    grid-column: 4 / span 2;
 }
