@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Tunas Bangsa - 2026</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-B/GM4XqrwHnWXNOWMbloTmrYXZg10cakYGmpfsR/bbzQ6JAJI4ihuyADKLnBgrCe" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+
+<header class="navbar-container">
+<nav class="navbar">
+<div class="logo">
+    <h2>Tunas Bangsa</h2>
+</div>
+<div class="Nav">
+    <a href="#">Home</a>
+    <a href="#">About Us</a>
+    <a href="#">Contact</a>
+</div>
+</nav>
+</header>
+<main>
+<div class="header">
+    <h1><b>Creative And Innovative<br>
+    <span id="highlight"></span><span class="cursor">|</span></b></h1>
+    <h3>2026</h3>
+</div>
+<div class="penjelasan">
+    <p>Mencetak anak anak dengan karakter kristus untuk menghadapi masa <br>
+         depan dan menjadi pribadi yang yang jujur, berani, penuh<br>
+          perhatian, dan tegas</p>
+<div class="struktur">
+        <h2 class="header-struktur"><b>Struktur Kelas</b></h2>
+    <div class="jabatan">
+        <h3>Wali Kelas</h3>
+        <p>Mr. Sakti</p>
+    </div>
+
+    <div class="jabatan">
+        <h3>Ketua Kelas</h3>
+        <p>Diva S</p>
+    </div>
+
+    <div class="pengurus">
+
+        <div class="jabatan">
+            <h3>Bendahara</h3>
+            <p>Garilin I</p>
+        </div>
+
+        <div class="jabatan">
+            <h3>Sekretaris</h3>
+            <p>Victoria B</p>
+        </div>
+
+    </div>
+        <div class="jabatan">
+            <h3>Anggota</h3>
+            <p>Murid Non Jabatan</p>
+        </div>
+</div>
+    <h2 class="header-kebersihan"><b>Jadwal Kebersihan</b></h2>
+<div class="Jadwal-Kebersihan">
+
+    <div class="kebersihan">
+        <h3>Senin</h3>
+        <p>Lorem</p>
+        <p>Lorem</p>
+        <p>Lorem</p>
+        <br>
+    </div>
+    <div class="kebersihan">
+        <h3>Selasa</h3>
+        <p>Azel</p>
+        <p>Ambu</p>
+        <p>Zefano</p>
+        <br>
+    </div>
+    <div class="kebersihan">
+        <h3>Rabu</h3>
+        <p>Lorem</p>
+        <p>Lorem</p>
+        <p>Lorem</p>
+        <br>
+    </div>
+    <div class="kebersihan">
+        <h3>Kamis</h3>
+        <p>Lorem</p>
+        <p>Lorem</p>
+        <p>Lorem</p>
+        <br>
+    </div>
+    <div class="kebersihan">
+        <h3>Jumat</h3>
+        <p>Lorem</p>
+        <p>Lorem</p>
+        <p>Lorem</p>
+        <p>Lorem</p>
+    </div>
+</div>
+<h2 class="Header-anggota"><b>Anggota</b></h2>
+<div class="Anggota-container">
+    <div class="anggota"><h3>Alika</h3></div>
+    <div class="anggota"><h3>Azel</h3></div>
+    <div class="anggota"><h3>Derrel</h3></div>
+    <div class="anggota"><h3>Deugense</h3></div>
+    <div class="anggota"><h3>Esaf</h3></div>
+    <div class="anggota"><h3>Exl</h3></div>
+    <div class="anggota"><h3>Faustine</h3></div>
+    <div class="anggota"><h3>Hersa</h3></div>
+    <div class="anggota"><h3>Jano</h3></div>
+    <div class="anggota"><h3>Jayden</h3></div>
+    <div class="anggota"><h3>Jeno</h3></div>
+    <div class="anggota"><h3>Netasha</h3></div>
+    <div class="anggota"><h3>Zefano</h3></div>
+</div>
+</main>
+<footer class="footer">
+    <p class="penutup">Belajar dan berkembang bersama.</p>
+
+
+    <p class="copyright">
+        © 2026 Tunas Bangsa. All rights reserved.
+    </p>
+    <div class="footer-nav">
+        <a href="#">Home</a>
+        <a href="#">About Us</a>
+        <a href="#">Contact</a>
+    </div>
+</footer>
+<script>
+
+document.addEventListener("DOMContentLoaded", function () {
+    const text = "Students";
+    const el = document.getElementById("highlight");
+
+    if (!el) {
+        console.error("Elemen #highlight tidak ditemukan");
+        return;
+    }
+
+    const typeSpeed = 120;
+    const deleteSpeed = 80;
+    const pauseAfterType = 2000;
+    const pauseAfterDelete = 500;
+
+    let index = 0;
+    let isDeleting = false;
+
+    function loop() {
+        if (!isDeleting) {
+            index++;
+            el.textContent = text.substring(0, index);
+            if (index === text.length) {
+                isDeleting = true;
+                setTimeout(loop, pauseAfterType);
+                return;
+            }
+            setTimeout(loop, typeSpeed);
+        } else {
+            index--;
+            el.textContent = text.substring(0, index);
+            if (index === 0) {
+                isDeleting = false;
+                setTimeout(loop, pauseAfterDelete);
+                return;
+            }
+            setTimeout(loop, deleteSpeed);
+        }
+    }
+
+    loop();
+});
+    </script>
+</body>
+</html>
