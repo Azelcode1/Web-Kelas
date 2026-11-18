@@ -28,7 +28,7 @@ body {
     color: black;
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
     .container {
         flex-direction: column;
     }
@@ -291,11 +291,13 @@ body {
     gap: 150px;
 }
 .foto{
-    width: 400px;
+    width: 90%;
+    max-width: 400px;
     height:auto;
     margin-left: 150px;
 }
 .fotoM{
-    width: 400px;
+    width: 90%;
+    max-width: 400px;
     height:auto;
 }
