@@ -288,11 +288,12 @@ body {
 }
 .galeri{
     display:flex;
-    gap: 150px;
+    gap: 120px;
 }
 .foto{
     width: 400px;
     height:auto;
+    margin-left: 150px;
 }
 .fotoM{
     width: 400px;
