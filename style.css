@@ -286,18 +286,18 @@ body {
     margin-top: 30px;
     margin-bottom: 30px
 }
-.galeri{
-    display:flex;
-    gap: 150px;
-}
+
 .foto{
-    width: 90%;
+    width: 400px;
     max-width: 400px;
-    height:auto;
-    margin-left: 150px;
+    border-radius: 30px;
+    margin: 50px;
+    
 }
 .fotoM{
-    width: 90%;
+    width: 400px;
     max-width: 400px;
-    height:auto;
+    border-radius: 30px;
 }
+
+
