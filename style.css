@@ -288,7 +288,7 @@ body {
 }
 .galeri{
     display:flex;
-    gap: 120px;
+    gap: 140px;
 }
 .foto{
     width: 400px;
